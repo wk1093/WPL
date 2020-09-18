@@ -11,3 +11,10 @@ The file will have its original line endings in your working directory
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 To https://github.com/wk1093/WPL
    52bb71c..50b3fd1  master -> master
+warning: LF will be replaced by CRLF in log.
+The file will have its original line endings in your working directory
+[master a21b58d] AUTO UPDATE
+ 1 file changed, 7 insertions(+)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/wk1093/WPL
+   50b3fd1..a21b58d  master -> master
