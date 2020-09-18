@@ -2246,7 +2246,9 @@ def runfile(fn):
     except Exception as e:
         print("ERROR")
 
-    _, error = run(fn, script)
+    _, runfile_error = run(fn, script)
+
+    print(runfile_error)
 
 
 def run(fn, text, file=None):
