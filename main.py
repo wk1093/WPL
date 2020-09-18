@@ -1,4 +1,7 @@
-import sys, shell, run
+import run
+import shell
+import sys
+
 
 def get_args(args):
     if len(args) > 2:
@@ -9,9 +12,10 @@ def get_args(args):
         return
     elif len(args) == 2:
         if args[1] in ("-h", "-help"):
-            print("USAGE: cw [FILE]")
+            print("USAGE: wpl [FILE]")
             return
         else:
             run.run(sys.argv)
+
 
 get_args(sys.argv)
