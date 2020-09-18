@@ -2248,7 +2248,8 @@ def runfile(fn):
 
     _, runfile_error = run(fn, script)
 
-   if runfile_error: print(runfile_error)
+    if runfile_error:
+        print(runfile_error)
 
 
 def run(fn, text, file=None):
