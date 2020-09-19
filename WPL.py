@@ -1726,7 +1726,8 @@ class BuiltInFunction(BaseFunction):
     #####################################
 
     def execute_print(self, exec_ctx):
-        print(str(exec_ctx.symbol_table.get('value')))
+        print(String(str(exec_ctx.symbol_table.get('value'))))
+
         return RTResult().success(Number.null)
 
     execute_print.arg_names = ['value']
@@ -1888,8 +1889,6 @@ class BuiltInFunction(BaseFunction):
                 f"Failed to load script \"{fn}\"\n" + str(e),
                 exec_ctx
             ))
-        print("FN: " + fn) #################################################################################################
-        print("SC: " + script)
         _, error = run(fn, script)
 
         if error:
